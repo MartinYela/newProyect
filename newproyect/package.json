@@ -1,5 +1,5 @@
 {
-  "homepage":"http://MartinYela.github.io/newProyect",
+  "homepage": "https://MartinYela.github.io/newProyect",
   "name": "newproyect",
   "version": "0.1.0",
   "private": true,
@@ -39,6 +39,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "3.0.0"
+    "gh-pages": "^3.2.3"
   }
 }
