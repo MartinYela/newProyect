@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import "./style.css";
 
 export default function Camara() {
     const videoRef = useRef(null);
@@ -28,7 +29,7 @@ export default function Camara() {
         setTimeout(() => {
             timer.current = 1;
             console.log(timer.current)
-        }, 30000);
+        }, 3000);
         setTimeout(() => {
             if (streamRecorderRef.current) {
                 stopRecording();
@@ -79,7 +80,7 @@ export default function Camara() {
                 <button onClick={stopRecording} disabled={!isRecording}>Parar</button>
             </div>
             <div>
-                {downloadLink && <video src={downloadLink} controls></video>}
+                {/* {downloadLink && <video src={downloadLink} controls></video>} */}
                 {downloadLink && <a href={downloadLink} download="file.mp4">Descargar</a>}
             </div>
         </div>
